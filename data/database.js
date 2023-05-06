@@ -7,6 +7,6 @@ export const connectDB=()=>{
         useNewUrlParser:true,
         useUnifiedTopology:true
     })
-    .then(()=>console.log("Mongodb connected successfully"))
+    .then((c)=>console.log(`Mongodb connected with ${c.connection.host}`))
     .catch((e)=>console.log(e))
 } 
