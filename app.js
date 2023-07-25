@@ -26,7 +26,7 @@ app.use("/api/v1/users",userRouter);
 app.use("/api/v1/tasks",taskRouter)
 
 app.get("/",(req,res)=>{
-    res.send("default check")
+    res.send("Checking node Todo App .....")
 })
 
 app.use(errorMiddleware);
